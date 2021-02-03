@@ -9,7 +9,7 @@ namespace DesafioTecnico.ConsoleApp
     public List<int> Divisores { get; set; }
     public List<int> Primos { get; set; }
 
-    public List<int> ObtemDivisores(int numero)
+    public void ObtemDivisores(int numero)
     {
       List<int> divisores = new List<int>();
       for (int i = 1; i <= Math.Sqrt(numero); i++)
@@ -23,7 +23,7 @@ namespace DesafioTecnico.ConsoleApp
         }
       }
       divisores.Sort();
-      return divisores;
+      Divisores = divisores;
     }
 
     public bool EhDivisaoExata(int numero, int i)
@@ -41,15 +41,15 @@ namespace DesafioTecnico.ConsoleApp
       return true;
     }
 
-    public List<int> ObtemNumerosPrimos(List<int> numeros)
+    public void ObtemNumerosPrimos()
     {
       List<int> primos = new List<int>();
-      foreach(int numero in numeros)
+      foreach(int numero in Divisores)
       {
         if (EhPrimo(numero))
           primos.Add(numero);
       }
-      return primos;
+      Primos = primos;
     } 
 
   }

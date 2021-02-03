@@ -24,8 +24,8 @@ namespace DesafioTecnico.WebApi.Controllers
     public Calculadora Get(int numero)
     {
       Calculadora calculadora = new Calculadora();
-      calculadora.Divisores = calculadora.ObtemDivisores(numero);
-      calculadora.Primos = calculadora.ObtemNumerosPrimos(calculadora.Divisores);
+      calculadora.ObtemDivisores(numero);
+      calculadora.ObtemNumerosPrimos();
 
       return calculadora;
     }

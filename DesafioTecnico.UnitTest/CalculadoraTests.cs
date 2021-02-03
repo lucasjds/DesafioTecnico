@@ -60,9 +60,9 @@ namespace DesafioTecnico.UnitTest
 
       Calculadora calculadora = new Calculadora();
       //act
-      List<int> resultado = calculadora.ObtemDivisores(45);
+      calculadora.ObtemDivisores(45);
       //Assert
-      Assert.Equal(listaEsperada, resultado);
+      Assert.Equal(listaEsperada, calculadora.Divisores);
     }
 
     [Fact]
@@ -72,9 +72,9 @@ namespace DesafioTecnico.UnitTest
 
       Calculadora calculadora = new Calculadora();
       //act
-      List<int> resultado = calculadora.ObtemDivisores(45);
+      calculadora.ObtemDivisores(45);
       //Assert
-      Assert.NotEqual(new List<int>() { 1, 3, 5, 9, 45 }, resultado);
+      Assert.NotEqual(new List<int>() { 1, 3, 5, 9, 45 }, calculadora.Divisores);
     }
 
     [Fact]
@@ -82,12 +82,12 @@ namespace DesafioTecnico.UnitTest
     {
       //arrange
       Calculadora calculadora = new Calculadora();
-      var listaNumeros = new List<int>() { 1, 3, 5, 9, 15, 45 };
+      calculadora.Divisores = new List<int>() { 1, 3, 5, 9, 15, 45 };
       var listaEsperadaDePrimos = new List<int>() { 1, 3, 5,};
       //act
-      List<int> resultado = calculadora.ObtemNumerosPrimos(listaNumeros);
+      calculadora.ObtemNumerosPrimos();
       //Assert
-      Assert.Equal(listaEsperadaDePrimos, resultado);
+      Assert.Equal(listaEsperadaDePrimos, calculadora.Primos);
     }
   }
 }
