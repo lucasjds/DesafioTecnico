@@ -11,23 +11,30 @@ namespace DesafioTecnico.ConsoleApp
       List<int> divisores = new List<int>();
       for (int i = 1; i <= Math.Sqrt(numero); i++)
       {
-        if (numero % i == 0)
+        if (EhDivisaoExata(numero, i))
         {
           divisores.Add(i);
-          if ((numero / i) != i )
-            divisores.Add(numero / i);
+          int numeroEspelho = numero / i;
+          if (numeroEspelho != i)
+            divisores.Add(numeroEspelho);
         }
       }
       divisores.Sort();
       return divisores;
     }
 
+    private static bool EhDivisaoExata(int numero, int i)
+    {
+      return numero % i == 0;
+    }
+
     static void Main(string[] args)
     {
-      var result = ObtemDivisores(100);
-      foreach (int number in result)
+      int valorDeEntrada = Convert.ToInt32(Console.ReadLine());
+      var result = ObtemDivisores(valorDeEntrada);
+      foreach (int divisor in result)
       {
-        Console.WriteLine(number);
+        Console.WriteLine(divisor);
       }
 
     }
