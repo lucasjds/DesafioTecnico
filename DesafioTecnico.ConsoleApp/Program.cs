@@ -28,13 +28,41 @@ namespace DesafioTecnico.ConsoleApp
       return numero % i == 0;
     }
 
+    public static bool EhPrimo(int numero)
+    {
+      for (int i = 2; (i * i) <= numero; i++)
+      {
+        if (EhDivisaoExata(numero, i)) 
+          return false;
+      }
+      return true;
+    }
+
+    public static List<int> ObtemNumerosPrimos(List<int> numeros)
+    {
+      List<int> primos = new List<int>();
+      foreach(int numero in numeros)
+      {
+        if (EhPrimo(numero))
+          primos.Add(numero);
+      }
+      return primos;
+    } 
+
     static void Main(string[] args)
     {
       int valorDeEntrada = Convert.ToInt32(Console.ReadLine());
-      var result = ObtemDivisores(valorDeEntrada);
-      foreach (int divisor in result)
+      var listaDivisores = ObtemDivisores(valorDeEntrada);
+      var listaPrimos = ObtemNumerosPrimos(listaDivisores);
+      Console.WriteLine("Divisores");
+      foreach (int divisor in listaDivisores)
       {
         Console.WriteLine(divisor);
+      }
+      Console.WriteLine("Primos");
+      foreach (int primo in listaPrimos)
+      {
+        Console.WriteLine(primo);
       }
 
     }
