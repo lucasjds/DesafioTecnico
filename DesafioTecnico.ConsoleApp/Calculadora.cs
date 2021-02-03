@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace DesafioTecnico.ConsoleApp
 {
-  public class Program
+  public class Calculadora
   {
 
     public static List<int> ObtemDivisores(int numero)
@@ -23,7 +23,7 @@ namespace DesafioTecnico.ConsoleApp
       return divisores;
     }
 
-    private static bool EhDivisaoExata(int numero, int i)
+    public static bool EhDivisaoExata(int numero, int i)
     {
       return numero % i == 0;
     }

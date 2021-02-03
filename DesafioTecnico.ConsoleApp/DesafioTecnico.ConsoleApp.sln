@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioTecnico.ConsoleApp", "DesafioTecnico.ConsoleApp.csproj", "{453B9C45-0C67-4B22-ADE7-3B94F59EB101}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioTecnico.UnitTest", "..\DesafioTecnico.UnitTest\DesafioTecnico.UnitTest.csproj", "{57425E18-6F01-4F5F-A48C-ABB9F38E8FC6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{453B9C45-0C67-4B22-ADE7-3B94F59EB101}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{453B9C45-0C67-4B22-ADE7-3B94F59EB101}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{453B9C45-0C67-4B22-ADE7-3B94F59EB101}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57425E18-6F01-4F5F-A48C-ABB9F38E8FC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57425E18-6F01-4F5F-A48C-ABB9F38E8FC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57425E18-6F01-4F5F-A48C-ABB9F38E8FC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57425E18-6F01-4F5F-A48C-ABB9F38E8FC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
