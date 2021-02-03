@@ -6,6 +6,8 @@ namespace DesafioTecnico.ConsoleApp
 
   public class Calculadora 
   {
+    public List<int> Divisores { get; set; }
+    public List<int> Primos { get; set; }
 
     public List<int> ObtemDivisores(int numero)
     {

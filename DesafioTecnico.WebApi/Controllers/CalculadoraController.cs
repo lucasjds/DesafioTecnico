@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DesafioTecnico.ConsoleApp;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -19,12 +20,17 @@ namespace DesafioTecnico.WebApi.Controllers
       return new string[] { "value1", "value2" };
     }
 
-    // GET api/<CalculadoraController>/5
-    [HttpGet("{id}")]
-    public string Get(int id)
+    [HttpGet("{numero}")]
+    public Calculadora Get(int numero)
     {
-      return "value";
+      Calculadora calculadora = new Calculadora();
+      calculadora.Divisores = calculadora.ObtemDivisores(numero);
+      calculadora.Primos = calculadora.ObtemNumerosPrimos(calculadora.Divisores);
+
+      return calculadora;
     }
+
+  
 
     // POST api/<CalculadoraController>
     [HttpPost]
