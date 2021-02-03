@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DesafioTecnico.ConsoleApp\DesafioTecnico.ConsoleApp.csproj" />
+    <ProjectReference Include="..\DesafioTecnico.Commons\DesafioTecnico.Commons.csproj" />
   </ItemGroup>
 
 </Project>

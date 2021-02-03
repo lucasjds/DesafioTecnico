@@ -1,0 +1,9 @@
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.Commons\bin\Debug\netcoreapp3.1\DesafioTecnico.Commons.deps.json
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.Commons\bin\Debug\netcoreapp3.1\DesafioTecnico.Commons.dll
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.Commons\bin\Debug\netcoreapp3.1\DesafioTecnico.Commons.pdb
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.Commons\obj\Debug\netcoreapp3.1\DesafioTecnico.Commons.csprojAssemblyReference.cache
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.Commons\obj\Debug\netcoreapp3.1\DesafioTecnico.Commons.AssemblyInfoInputs.cache
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.Commons\obj\Debug\netcoreapp3.1\DesafioTecnico.Commons.AssemblyInfo.cs
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.Commons\obj\Debug\netcoreapp3.1\DesafioTecnico.Commons.csproj.CoreCompileInputs.cache
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.Commons\obj\Debug\netcoreapp3.1\DesafioTecnico.Commons.dll
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.Commons\obj\Debug\netcoreapp3.1\DesafioTecnico.Commons.pdb
