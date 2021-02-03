@@ -1,0 +1,13 @@
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.ConsoleApp\bin\Debug\netcoreapp3.1\DesafioTecnico.ConsoleApp.exe
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.ConsoleApp\bin\Debug\netcoreapp3.1\DesafioTecnico.ConsoleApp.deps.json
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.ConsoleApp\bin\Debug\netcoreapp3.1\DesafioTecnico.ConsoleApp.runtimeconfig.json
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.ConsoleApp\bin\Debug\netcoreapp3.1\DesafioTecnico.ConsoleApp.runtimeconfig.dev.json
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.ConsoleApp\bin\Debug\netcoreapp3.1\DesafioTecnico.ConsoleApp.dll
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.ConsoleApp\bin\Debug\netcoreapp3.1\DesafioTecnico.ConsoleApp.pdb
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.ConsoleApp\obj\Debug\netcoreapp3.1\DesafioTecnico.ConsoleApp.csprojAssemblyReference.cache
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.ConsoleApp\obj\Debug\netcoreapp3.1\DesafioTecnico.ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.ConsoleApp\obj\Debug\netcoreapp3.1\DesafioTecnico.ConsoleApp.AssemblyInfo.cs
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.ConsoleApp\obj\Debug\netcoreapp3.1\DesafioTecnico.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.ConsoleApp\obj\Debug\netcoreapp3.1\DesafioTecnico.ConsoleApp.dll
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.ConsoleApp\obj\Debug\netcoreapp3.1\DesafioTecnico.ConsoleApp.pdb
+C:\Users\lucas.jose\Documents\alura\DesafioTecnico\DesafioTecnico.ConsoleApp\obj\Debug\netcoreapp3.1\DesafioTecnico.ConsoleApp.genruntimeconfig.cache
