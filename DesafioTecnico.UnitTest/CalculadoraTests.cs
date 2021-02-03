@@ -6,7 +6,7 @@ using Xunit;
 
 namespace DesafioTecnico.UnitTest
 {
-  public class UnitTest1
+  public class CalculadoraTests
   {
     [Fact]
     public void EhDivisaoExatao_QuandoRestoIgualZero()

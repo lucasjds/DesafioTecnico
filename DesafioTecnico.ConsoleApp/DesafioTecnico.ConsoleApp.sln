@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioTecnico.ConsoleApp",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioTecnico.UnitTest", "..\DesafioTecnico.UnitTest\DesafioTecnico.UnitTest.csproj", "{57425E18-6F01-4F5F-A48C-ABB9F38E8FC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioTecnico.WebApi", "..\DesafioTecnico.WebApi\DesafioTecnico.WebApi.csproj", "{59DF0CCB-A19B-4A79-BC5B-A4DA3E9DA539}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{57425E18-6F01-4F5F-A48C-ABB9F38E8FC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57425E18-6F01-4F5F-A48C-ABB9F38E8FC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57425E18-6F01-4F5F-A48C-ABB9F38E8FC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59DF0CCB-A19B-4A79-BC5B-A4DA3E9DA539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59DF0CCB-A19B-4A79-BC5B-A4DA3E9DA539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59DF0CCB-A19B-4A79-BC5B-A4DA3E9DA539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59DF0CCB-A19B-4A79-BC5B-A4DA3E9DA539}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
