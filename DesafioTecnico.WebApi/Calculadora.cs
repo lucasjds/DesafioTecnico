@@ -11,6 +11,8 @@ namespace DesafioTecnico.Commons
 
     public void ObtemDivisores(int numero)
     {
+      if(numero <= 0)
+        throw new Exception("Entre com um numero maior que zero");
       List<int> divisores = new List<int>();
       for (int i = 1; i <= Math.Sqrt(numero); i++)
       {

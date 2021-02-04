@@ -79,6 +79,16 @@ namespace DesafioTecnico.UnitTest
     }
 
     [Fact]
+    public void VerificaObtemDivisores_QuandoNumeroEhZero()
+    {
+      //arrange
+
+      Calculadora calculadora = new Calculadora();
+      //act
+      Assert.Throws<Exception>(() => calculadora.ObtemDivisores(0));
+    }
+
+    [Fact]
     public void VerificaObtemPrimos()
     {
       //arrange
