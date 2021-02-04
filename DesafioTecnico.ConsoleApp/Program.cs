@@ -10,20 +10,22 @@ namespace DesafioTecnico.ConsoleApp
 
     static async System.Threading.Tasks.Task Main(string[] args)
     {
-
-      int valorDeEntrada = Convert.ToInt32(Console.ReadLine());
-      string relativeUri = string.Format("api/calculadora/", valorDeEntrada, "/obtemresultado"); 
-      HttpClient httpClient = new HttpClient();
-      Uri baseUri = new Uri("http://localhost:5000");
-      Uri uri = new Uri(baseUri, relativeUri);
-
-      HttpResponseMessage httpResponseMessage = await httpClient.GetAsync(uri);
-      Console.WriteLine(await httpResponseMessage.Content.ReadAsStringAsync());
-
-      if (!httpResponseMessage.IsSuccessStatusCode)
+      using (HttpClient httpClient = new HttpClient())
       {
-        throw new ApplicationException(httpResponseMessage.ReasonPhrase);
+        int valorDeEntrada = Convert.ToInt32(Console.ReadLine());
+        string relativeUri = string.Format("api/calculadora/", valorDeEntrada, "/obtemresultado");
+        Uri baseUri = new Uri("http://localhost:5000");
+        Uri uri = new Uri(baseUri, relativeUri);
+
+        HttpResponseMessage httpResponseMessage = await httpClient.GetAsync(uri);
+        Console.WriteLine(await httpResponseMessage.Content.ReadAsStringAsync());
+
+        if (!httpResponseMessage.IsSuccessStatusCode)
+        {
+          throw new ApplicationException(httpResponseMessage.ReasonPhrase);
+        }
       }
+      
 
     }
   }
