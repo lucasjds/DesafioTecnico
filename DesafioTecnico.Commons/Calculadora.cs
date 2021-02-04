@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DesafioTecnico.ConsoleApp
+namespace DesafioTecnico.Commons
 {
 
   public class Calculadora 

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using DesafioTecnico.WebMVC.Models;
 using System.Net.Http;
+using DesafioTecnico.Commons;
 
 namespace DesafioTecnico.WebMVC.Controllers
 {

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Net.Http;
 using Microsoft.Extensions.Configuration;
 
-namespace DesafioTecnico.WebMVC
+namespace DesafioTecnico.Commons
 {
   public interface ICalculadoraHelper
   {
