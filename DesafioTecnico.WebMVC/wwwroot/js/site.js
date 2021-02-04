@@ -3,15 +3,21 @@
 
 // Write your JavaScript code.
 
-$.ajax({
-  type: "POST",
-  url: "/Home/ObtemResultadoCalculadora",
-  data: { numero: 45 },
-  dataType: "text",
-  success: function (msg) {
-    alert("RESULTADO PARA NUMERO 45 : " + JSON.stringify(msg, null, 2) );
-  },
-  error: function (req, status, error) {
-    console.log(msg);
-  }
-}); 
+function calcularNumeros() {
+  $.ajax({
+    type: "POST",
+    url: "/Home/ObtemResultadoCalculadora",
+    data: {
+      numero: $("#numero").val()
+    },
+    dataType: "text",
+    success: function (msg) {
+      $("#resultado").html("");
+      $("#resultado").html(JSON.stringify(msg, null, 4));
+    },
+    error: function (req, status, error) {
+      $("#resultado").html("");
+      $("#resultado").html("Algum erro ocorreu");
+    }
+  }); 
+}

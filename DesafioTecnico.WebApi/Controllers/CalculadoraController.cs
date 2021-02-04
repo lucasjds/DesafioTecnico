@@ -21,12 +21,12 @@ namespace DesafioTecnico.WebApi.Controllers
     }
 
     [HttpGet("{numero}/obtemresultado")]
-    public Calculadora ObtemResultadosCalculadora(int numero)
+    public IActionResult ObtemResultadosCalculadora(int numero)
     {
       Calculadora calculadora = new Calculadora();
       calculadora.ObtemDivisores(numero);
       calculadora.ObtemNumerosPrimos();
-      return calculadora;
+      return Ok(calculadora);
     }
 
   }

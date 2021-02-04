@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using DesafioTecnico.WebMVC.Models;
 using System.Net.Http;
 using DesafioTecnico.Commons;
+using System.Text.Json;
 
 namespace DesafioTecnico.WebMVC.Controllers
 {
@@ -26,21 +27,12 @@ namespace DesafioTecnico.WebMVC.Controllers
       return View();
     }
 
-    public IActionResult Privacy()
-    {
-      return View();
-    }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-      return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-    }
 
     [HttpPost]
-    public async Task<JsonResult> ObtemResultadoCalculadora(string numero)
+    public async Task<string> ObtemResultadoCalculadora(string numero)
     {
-      return Json(await _calculadoraHelper.ObtemResultados(Convert.ToInt32(numero)));
+      var resultado = await _calculadoraHelper.ObtemResultados(Convert.ToInt32(numero));
+      return resultado;
     }
   }
 }
