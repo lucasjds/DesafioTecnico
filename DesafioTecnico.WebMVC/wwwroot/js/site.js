@@ -9,7 +9,7 @@ $.ajax({
   data: { numero: 45 },
   dataType: "text",
   success: function (msg) {
-    alert("RESULTADO : " + JSON.stringify(msg, null, 2) );
+    alert("RESULTADO PARA NUMERO 45 : " + JSON.stringify(msg, null, 2) );
   },
   error: function (req, status, error) {
     console.log(msg);
