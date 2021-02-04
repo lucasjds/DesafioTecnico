@@ -26,12 +26,6 @@ namespace DesafioTecnico.WebMVC.Controllers
       return View();
     }
 
-    [HttpPost]
-    public async Task<JsonResult> ObtemResultadoCalculadora(string numero)
-    {
-      return Json(await _calculadoraHelper.ObtemResultados(Convert.ToInt32(numero)));
-    }
-
     public IActionResult Privacy()
     {
       return View();
@@ -41,6 +35,12 @@ namespace DesafioTecnico.WebMVC.Controllers
     public IActionResult Error()
     {
       return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    }
+
+    [HttpPost]
+    public async Task<JsonResult> ObtemResultadoCalculadora(string numero)
+    {
+      return Json(await _calculadoraHelper.ObtemResultados(Convert.ToInt32(numero)));
     }
   }
 }

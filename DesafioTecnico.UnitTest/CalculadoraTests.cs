@@ -90,5 +90,15 @@ namespace DesafioTecnico.UnitTest
       //Assert
       Assert.Equal(listaEsperadaDePrimos, calculadora.Primos);
     }
+
+    [Fact]
+    public void VerificaObtemPrimos_QuandoNaoCalcularOsDivisoresSeLancaExcecao()
+    {
+      //arrange
+      Calculadora calculadora = new Calculadora();
+      var listaEsperadaDePrimos = new List<int>() { 1, 3, 5, };
+      //Assert
+      Assert.Throws<Exception>(() => calculadora.ObtemNumerosPrimos());
+    }
   }
 }

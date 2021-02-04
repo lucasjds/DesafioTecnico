@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace DesafioTecnico.Commons
 {
 
-  public class Calculadora 
+  public class Calculadora
   {
     public List<int> Divisores { get; set; }
     public List<int> Primos { get; set; }
@@ -35,7 +35,7 @@ namespace DesafioTecnico.Commons
     {
       for (int i = 2; (i * i) <= numero; i++)
       {
-        if (EhDivisaoExata(numero, i)) 
+        if (EhDivisaoExata(numero, i))
           return false;
       }
       return true;
@@ -43,14 +43,16 @@ namespace DesafioTecnico.Commons
 
     public void ObtemNumerosPrimos()
     {
+      if (Divisores == null)
+        throw new Exception("Os Divisores devem ser calculadores primeiramente");
       List<int> primos = new List<int>();
-      foreach(int numero in Divisores)
+      foreach (int numero in Divisores)
       {
         if (EhPrimo(numero))
           primos.Add(numero);
       }
       Primos = primos;
-    } 
+    }
 
   }
 }

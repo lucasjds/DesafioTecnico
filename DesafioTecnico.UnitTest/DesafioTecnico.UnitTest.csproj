@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DesafioTecnico.Commons\DesafioTecnico.Commons.csproj" />
+    <ProjectReference Include="..\DesafioTecnico.WebApi\DesafioTecnico.WebApi.csproj" />
   </ItemGroup>
 
 </Project>
