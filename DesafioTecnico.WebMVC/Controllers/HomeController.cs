@@ -31,8 +31,7 @@ namespace DesafioTecnico.WebMVC.Controllers
     [HttpPost]
     public async Task<string> ObtemResultadoCalculadora(string numero)
     {
-      var resultado = await _calculadoraHelper.ObtemResultados(Convert.ToInt32(numero));
-      return resultado;
+      return await _calculadoraHelper.ObtemResultados(Convert.ToInt32(numero));
     }
   }
 }
