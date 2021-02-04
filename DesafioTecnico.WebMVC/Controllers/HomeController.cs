@@ -13,10 +13,11 @@ namespace DesafioTecnico.WebMVC.Controllers
   public class HomeController : Controller
   {
     private readonly ILogger<HomeController> _logger;
-   
-    public HomeController(ILogger<HomeController> logger)
+    private readonly ICalculadoraHelper _calculadoraHelper;
+    public HomeController(ILogger<HomeController> logger, ICalculadoraHelper calculadoraHelper)
     {
       _logger = logger;
+      _calculadoraHelper = calculadoraHelper;
     }
 
     public IActionResult Index()
@@ -25,22 +26,9 @@ namespace DesafioTecnico.WebMVC.Controllers
     }
 
     [HttpPost]
-    public async Task<JsonResult> ObtemResultadoCalculadoraAsync(string numero)
+    public async Task<JsonResult> ObtemResultadoCalculadora(string numero)
     {
-      using(HttpClient httpClient = new HttpClient())
-      {
-        string relativeUri = "api/calculadora/" + numero + "/obtemresultado";
-        Uri baseUri = new Uri("http://localhost:5000");
-        Uri uri = new Uri(baseUri, relativeUri);
-        HttpResponseMessage httpResponseMessage = await httpClient.GetAsync(uri);
-        if (!httpResponseMessage.IsSuccessStatusCode)
-        {
-          throw new ApplicationException(httpResponseMessage.ReasonPhrase);
-        }
-
-        return Json(await httpResponseMessage.Content.ReadAsStringAsync());
-      }
-      
+      return Json(await _calculadoraHelper.ObtemResultados(Convert.ToInt32(numero)));
     }
 
     public IActionResult Privacy()
