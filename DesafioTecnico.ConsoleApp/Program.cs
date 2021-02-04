@@ -13,7 +13,7 @@ namespace DesafioTecnico.ConsoleApp
       using (HttpClient httpClient = new HttpClient())
       {
         int valorDeEntrada = Convert.ToInt32(Console.ReadLine());
-        string relativeUri = "api/calculadora/" +  valorDeEntrada + "/obtemresultado");
+        string relativeUri = "api/calculadora/" +  valorDeEntrada + "/obtemresultado";
         Uri baseUri = new Uri("http://localhost:5000");
         Uri uri = new Uri(baseUri, relativeUri);
         HttpResponseMessage httpResponseMessage = await httpClient.GetAsync(uri);
