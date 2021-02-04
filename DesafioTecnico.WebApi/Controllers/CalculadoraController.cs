@@ -20,34 +20,14 @@ namespace DesafioTecnico.WebApi.Controllers
       return new string[] { "value1", "value2" };
     }
 
-    [HttpGet("{numero}")]
-    public Calculadora Get(int numero)
+    [HttpGet("{numero}/obtemresultado")]
+    public Calculadora ObtemResultadosCalculadora(int numero)
     {
       Calculadora calculadora = new Calculadora();
       calculadora.ObtemDivisores(numero);
       calculadora.ObtemNumerosPrimos();
-
       return calculadora;
     }
 
-  
-
-    // POST api/<CalculadoraController>
-    [HttpPost]
-    public void Post([FromBody] string value)
-    {
-    }
-
-    // PUT api/<CalculadoraController>/5
-    [HttpPut("{id}")]
-    public void Put(int id, [FromBody] string value)
-    {
-    }
-
-    // DELETE api/<CalculadoraController>/5
-    [HttpDelete("{id}")]
-    public void Delete(int id)
-    {
-    }
   }
 }

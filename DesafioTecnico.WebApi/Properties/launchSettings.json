@@ -20,7 +20,7 @@
     "DesafioTecnico.WebApi": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "calculadora/api",
+      "launchUrl": "api/calculadora",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

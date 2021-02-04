@@ -1,27 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Net.Http;
 
 namespace DesafioTecnico.ConsoleApp
 {
   class Program
   {
-    static void Main(string[] args)
+
+    static async System.Threading.Tasks.Task Main(string[] args)
     {
-      Calculadora calculadora = new Calculadora();
 
       int valorDeEntrada = Convert.ToInt32(Console.ReadLine());
-      var listaDivisores = calculadora.ObtemDivisores(valorDeEntrada);
-      var listaPrimos = calculadora.ObtemNumerosPrimos(listaDivisores);
-      Console.WriteLine("Divisores");
-      foreach (int divisor in listaDivisores)
+      string relativeUri = string.Format("api/calculadora/", valorDeEntrada, "/obtemresultado"); 
+      HttpClient httpClient = new HttpClient();
+      Uri baseUri = new Uri("http://localhost:5000");
+      Uri uri = new Uri(baseUri, relativeUri);
+
+      HttpResponseMessage httpResponseMessage = await httpClient.GetAsync(uri);
+      Console.WriteLine(await httpResponseMessage.Content.ReadAsStringAsync());
+
+      if (!httpResponseMessage.IsSuccessStatusCode)
       {
-        Console.WriteLine(divisor);
-      }
-      Console.WriteLine("Primos");
-      foreach (int primo in listaPrimos)
-      {
-        Console.WriteLine(primo);
+        throw new ApplicationException(httpResponseMessage.ReasonPhrase);
       }
 
     }
